@@ -6,8 +6,8 @@ Initial macOS Support|OS X 10.6.3, Snow Leopard.
 Note 1|Apple does not support desktop Iron Lake iGPUs.
 Note 2|Most Lynnfield and Clarkdale boards do not support UEFI.
 
-- Opencore version: 0.7.1
-- Release date: 22/07/2021
+- Opencore version: 0.7.2
+- Release date: 03/08/2021
 
 # Basic Steps
 
@@ -122,6 +122,13 @@ iMac11,2|For Clarkdale.
 MacPro6,1|For Mojave and newer SMBIOS
 
 *If you plan to later run macOS 10.14, Mojave or newer, MacPro6,1 will be the recommended SMBIOS and the iGPU must be disabled in the BIOS due to no longer being supported*
+
+# Catalina and older versions of macOS
+
+- Please configure `MinDate` and `MinVersion` in UEFI > APFS to `-1`;
+- Please configure `SecureBootModel` in Misc > Security to `j137`;
+
+\* *Without above settings, macOS will not be able to boot.*
 
 # Special notes
 
