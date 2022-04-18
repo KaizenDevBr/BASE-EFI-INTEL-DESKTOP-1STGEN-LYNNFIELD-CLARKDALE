@@ -7,7 +7,7 @@ Note 1|Apple does not support desktop Iron Lake iGPUs.
 Note 2|Most Lynnfield and Clarkdale boards do not support UEFI.
 
 - Opencore version: 0.8.0
-- Release date: 04/04/2022
+- Release date: ~~04/04/2022~~, late - 18/04/2022
 
 # Basic Steps
 
