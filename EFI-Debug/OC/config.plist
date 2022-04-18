@@ -213,6 +213,8 @@
 			<false/>
 			<key>AppleXcpmForceBoost</key>
 			<false/>
+			<key>CustomPciSerialDevice</key>
+			<false/>
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
@@ -224,6 +226,8 @@
 			<key>ExtendBTFeatureFlags</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
+			<false/>
+			<key>ForceAquantiaEthernet</key>
 			<false/>
 			<key>ForceSecureBootScheme</key>
 			<false/>
@@ -305,8 +309,6 @@
 			<string>*</string>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
-			<key>SerialInit</key>
-			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -346,6 +348,13 @@
 			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
+		</dict>
+		<key>Serial</key>
+		<dict>
+			<key>Init</key>
+			<false/>
+			<key>Override</key>
+			<false/>
 		</dict>
 		<key>Tools</key>
 		<array/>
@@ -389,11 +398,13 @@
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<array>
 				<string>rtc-blacklist</string>
+				<string>opencore-version</string>
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
 				<string>boot-args</string>
 				<string>ForceDisplayRotationInEFI</string>
+				<string>prev-lang:kbd</string>
 			</array>
 		</dict>
 		<key>LegacyEnable</key>
@@ -554,26 +565,6 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>btrfs_x64.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>btrfs_x64.efi</string>
-			</dict>
-			<dict>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>ext4_x64.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>ext4_x64.efi</string>
-			</dict>
-			<dict>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
 				<string>HfsPlus.efi</string>
 				<key>Arguments</key>
 				<string></string>
@@ -589,16 +580,6 @@
 				<string></string>
 				<key>Comment</key>
 				<string>HfsPlusLegacy.efi</string>
-			</dict>
-			<dict>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>OpenLinuxBoot.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>OpenLinuxBoot.efi</string>
 			</dict>
 			<dict>
 				<key>Enabled</key>

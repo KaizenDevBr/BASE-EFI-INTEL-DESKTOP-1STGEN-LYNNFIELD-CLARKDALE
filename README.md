@@ -6,8 +6,8 @@ Initial macOS Support|OS X 10.6.3, Snow Leopard.
 Note 1|Apple does not support desktop Iron Lake iGPUs.
 Note 2|Most Lynnfield and Clarkdale boards do not support UEFI.
 
-- Opencore version: 0.7.9
-- Release date: 07/03/2022
+- Opencore version: 0.8.0
+- Release date: 04/04/2022
 
 # Basic Steps
 
